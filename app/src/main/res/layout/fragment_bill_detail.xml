@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBDBDB"
+    tools:context=".HomeMenuFragment.BillFragment.BillDetailFragment">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:background="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edtBillDetail_bookCode"
+                    android:fontFamily="@font/windsorb"
+                    android:textColor="@color/fpt_color"
+                    android:textColorHint="@color/fpt_color"
+                    android:textStyle="bold"
+                    android:drawablePadding="10dp"
+                    android:hint="Nhập mã sách"
+                    android:background="@drawable/edt_custom"
+                    android:drawableLeft="@drawable/ic_custom_book_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:background="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edtBillDetail_bookAmount"
+                    android:fontFamily="@font/windsorb"
+                    android:textColor="@color/fpt_color"
+                    android:textColorHint="@color/fpt_color"
+                    android:inputType="number"
+                    android:textStyle="bold"
+                    android:drawablePadding="10dp"
+                    android:hint="Nhập số lượng"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_custom_book_amount"
+                    android:background="@drawable/edt_custom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:background="#DBDBDB"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <Button
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_add_class"
+                    android:id="@+id/btnShowBillDetail"
+                    android:fontFamily="@font/windsorb"
+                    android:textColor="@color/fpt_color"
+                    android:text="Thêm hóa đơn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_add_class"
+                    android:id="@+id/btnAddBillDetail"
+                    android:fontFamily="@font/windsorb"
+                    android:textColor="@color/fpt_color"
+                    android:text="Thanh Toán"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="2.5dp"
+                android:background="@drawable/btn_add_class"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/fpt_color"
+                    android:layout_weight="3"
+                    android:paddingLeft="10dp"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/dalat"
+                    android:text="Thành Tiền:"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/txtTotalAmount"
+                    android:textColor="@color/fpt_color"
+                    android:layout_weight="2"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/dalat"
+                    android:text="0 VND"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="5dp"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="24dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_add_class"
+                    android:id="@+id/btnBillDetail_Show"
+                    android:fontFamily="@font/dalat"
+                    android:textColor="@color/fpt_color"
+                    android:text="Chi tiết"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="5dp"
+            android:id="@+id/recyclerView_BillDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</FrameLayout>

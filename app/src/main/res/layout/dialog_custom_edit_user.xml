@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/poly_logo"/>
+
+        <TextView
+            android:textColor="#F2752A"
+            android:enabled="false"
+            style="@style/txt_Main_Menu"
+            android:id="@+id/txtUsernameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:textColor="#000"
+                android:text="Test"
+                android:id="@+id/edtEditUserPhone"
+                style="@style/txt_Main_Menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số điện thoại" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:textColor="#000"
+                android:text="Test"
+                android:hint="Họ Tên"
+                style="@style/txt_Main_Menu"
+                android:id="@+id/edtEditUserFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnEditUserInfor_Cancel"
+                android:text="Bỏ qua"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnEditUserInfor_Save"
+                android:text="Thay đổi"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

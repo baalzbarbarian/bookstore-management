@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Splash_LoginScreen_ActionSetting.RegisterActivity">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:textColor="#F2752A"
+            android:gravity="center"
+            android:fontFamily="@font/windsorb"
+            android:textSize="28sp"
+            android:text="Thêm Thành Viên"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_marginTop="-13dp"
+            android:background="#DBDBDB"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="20dp"></LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textSize="14sp"
+                android:textColorHint="#F2752A"
+                android:id="@+id/edtUser_username"
+                android:hint="Tên đăng nhập"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textSize="14sp"
+                android:inputType="textPassword"
+                android:textColorHint="#F2752A"
+                android:id="@+id/edtUser_Pass1"
+                android:hint="Mật khẩu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textSize="14sp"
+                android:inputType="textPassword"
+                android:textColorHint="#F2752A"
+                android:id="@+id/edtUser_Pass2"
+                android:hint="Nhập lại mật khẩu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textSize="14sp"
+                android:textColorHint="#F2752A"
+                android:id="@+id/edtUser_phonenumber"
+                android:hint="Số điện thoại"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textSize="14sp"
+                android:textColorHint="#F2752A"
+                android:id="@+id/edtUser_fullname"
+                android:hint="Tên đầy đủ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Trở về"
+                    android:id="@+id/btnUser_Cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Xóa trắng"
+                    android:id="@+id/btnUser_Clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Lưu"
+                    android:id="@+id/btnUser_Save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

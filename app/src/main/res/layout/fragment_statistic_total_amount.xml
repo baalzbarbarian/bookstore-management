@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeMenuFragment.StatisticFragment.StatisticTotalAmountFragment">
+
+    <LinearLayout
+        android:background="#DBDBDB"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:background="@drawable/background_add_title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/fpt_color"
+            android:textSize="38sp"
+            android:fontFamily="@font/dalat"
+            android:text="Thống Kê Doanh Thu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:background="@drawable/btn_add_class"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            android:fontFamily="@font/dalat"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Doanh thu ngày"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/statisticTotalAmount_day"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="#0033cc"
+            android:textSize="24sp"
+            android:fontFamily="@font/dalat"
+            android:textStyle="bold"
+            android:text="1000000VND"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:background="@drawable/btn_add_class"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            android:fontFamily="@font/dalat"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Doanh thu tháng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/statisticTotalAmount_month"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="#0033cc"
+            android:textSize="24sp"
+            android:fontFamily="@font/dalat"
+            android:textStyle="bold"
+            android:text="1000000VND"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:background="@drawable/btn_add_class"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            android:fontFamily="@font/dalat"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Doanh thu năm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/statisticTotalAmount_year"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="#0033cc"
+            android:textSize="24sp"
+            android:fontFamily="@font/dalat"
+            android:textStyle="bold"
+            android:text="1000000VND"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</FrameLayout>

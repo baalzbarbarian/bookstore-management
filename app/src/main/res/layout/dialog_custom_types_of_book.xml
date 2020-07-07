@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/poly_logo"/>
+
+        <TextView
+            android:textColor="#F2752A"
+            android:enabled="false"
+            style="@style/txt_Main_Menu"
+            android:id="@+id/txtUsernameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <EditText
+            android:id="@+id/edtEditUserPhone"
+            style="@style/txt_Main_Menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên Sách" />
+
+
+        <EditText
+            android:hint="Vị trí"
+            style="@style/txt_Main_Menu"
+            android:id="@+id/edtEditUserFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/btn_add_class"
+                android:id="@+id/btnEditUserInfor_Cancel"
+                android:text="Bỏ qua"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:background="@drawable/btn_add_class"
+                android:id="@+id/btnEditUserInfor_Save"
+                android:text="Thay đổi"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

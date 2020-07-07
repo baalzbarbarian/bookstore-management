@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView_book"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0.0px"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:background="#FFF"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtBook_BookName"
+                    android:textColor="#FF9900"
+                    android:fontFamily="@font/windsorb"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="Tiếng Anh Topic 1.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1.5"
+                        android:gravity="left"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="Loại sách:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtBook_typesBook"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="Kinh tế"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1.5"
+                        android:gravity="left"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="Mã sách:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtBook_BookCode"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="Hà Huy Phát"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1.5"
+                        android:gravity="left"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="Số lượng:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtBook_BookAmount"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="Giáo dục"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1.5"
+                        android:gravity="left"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="Giá:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtBook_BookPrice"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="100000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgBook_icDelete"
+                android:layout_gravity="top|right"
+                android:src="@drawable/ic_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

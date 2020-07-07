@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".HomeMenuFragment.BookFragment.addBookFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/background_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/background_add_title"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="#FFF"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:gravity="left"
+                android:textSize="24sp"
+                android:fontFamily="@font/windsorb"
+                android:text="Thêm Sách"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:fontFamily="@font/windsorb"
+                android:paddingLeft="30dp"
+                android:text="@string/text_add_types"
+                android:textSize="14sp"
+                android:textColor="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/addBook_edt1"
+                android:textColor="#FFF"
+                android:fontFamily="@font/windsorb"
+                android:textColorHint="#FFF"
+                android:paddingLeft="10dp"
+                android:hint="Mã Sách"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/round_edt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <EditText
+                android:id="@+id/addBook_edt2"
+                android:textColor="#FFF"
+                android:fontFamily="@font/windsorb"
+                android:textColorHint="#FFF"
+                android:paddingLeft="10dp"
+                android:hint="Tên Sách"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/round_edt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:layout_weight="1"
+                    android:id="@+id/addBook_spinner"
+
+                    android:background="@drawable/round_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+                <ImageView
+                    android:id="@+id/imgAddTypesInAddBook"
+                    android:layout_weight="4.5"
+                    android:src="@drawable/ic_add_circle_blue_24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/addBook_edt3"
+                android:textColor="#FFF"
+                android:fontFamily="@font/windsorb"
+                android:textColorHint="#FFF"
+                android:paddingLeft="10dp"
+                android:hint="Tác giả"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/round_edt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/addBook_edt5"
+                android:textColor="#FFF"
+                android:fontFamily="@font/windsorb"
+                android:textColorHint="#FFF"
+                android:paddingLeft="10dp"
+                android:hint="Giá"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/round_edt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/addBook_edt6"
+                android:textColor="#FFF"
+                android:fontFamily="@font/windsorb"
+                android:textColorHint="#FFF"
+                android:paddingLeft="10dp"
+                android:hint="Số lượng"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/round_edt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="#0033cc"
+                android:layout_margin="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/addBook_btn1"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:text="Xóa"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_add_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+
+                    <Button
+                        android:id="@+id/addBook_btn2"
+                        android:textStyle="bold"
+                        android:text="Thêm"
+                        android:textColor="#FFF"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_add_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/addBook_btn3"
+                    android:textStyle="bold"
+                    android:text="Danh Sách"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_add_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:fontFamily="@font/windsorb"
+            android:padding="5dp"
+            android:gravity="bottom|right"
+            android:textSize="12sp"
+            android:textColor="#FFF"
+            android:text="ASSIGNMENT\nCopyright by PD03241"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <!--        <LinearLayout-->
+        <!--            android:background="#3399FF"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
+
+
+
+        <!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+
+</FrameLayout>
